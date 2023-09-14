@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'shabnam-medium';
+    src: url(../font/Shabnam-Medium.woff)format('woff2'),
+    url(../font/Shabnam.woff)format('woff');
+}
+:root{
+    --primary-color: #3b3a3a;
+    --box-color: #3b3a3a;
+    --main-color: #B7C4CF;
+    --head-color: #183e4b;
+}
+
+/*style full page*/
+
+*{
+    font-family: 'shabnam-medium';
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    direction: rtl;
+}
+
+/*style body*/
+body{
+    background-color: var(--primary-color);
+}
+
+/*header style*/
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--box-color);
+   /* box-shadow: 0px 10px 20px 0px #7f7f7f;*/
+}
+/*menu*/
+header nav{
+    text-align: center;
+    padding: 10px;
+
+}
+
+header ul  li[class*="one"]{
+    display: inline;
+    padding: 10px;
+    
+
+}
+header nav ul  li[class*="one"] a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+header nav ul li[class*="one"]:hover{
+    background-color: #575656;
+    border-radius: 3px;
+    
+}
+
+/*sum menu home*/
+header nav ul .has-sub-menu-1{
+    position: relative;
+}
+header nav ul .sub-menu-1{
+    position: absolute;
+    top: 38px;
+    left: -78px;
+    min-width: 200px;
+    background-color: #549fb4;
+    list-style: none;
+    display: none;
+    box-shadow: 0px 8px 16px 1px #7b7b7b;
+    border-radius: 3px;
+}
+header nav ul .sub-menu-1 a{
+    text-align: right;
+    display: block;
+    padding: 8px;
+    margin-right: 3px;
+    margin: 0 auto;
+}
+header nav ul .sub-menu-1 a:hover {
+    background-color: #5fa9be;
+    color: #2c2b2b;
+    font-size: 15px;
+    font-weight: bold;
+}
+header nav ul li:hover .sub-menu-1{
+    display: block;
+}
+/*sub menu 2*/
+header nav ul .has-sub-menu-2 {
+    position: relative;
+}
+header nav ul .sub-menu-2{
+    position: absolute;
+    top: 38px;
+    left: -78px;
+    min-width: 200px;
+    background-color: #549fb4;
+    list-style: none;
+    display: none;
+    background-color: #549fb4;
+    list-style: none;
+    box-shadow: 0px 8px 16px 1px #7b7b7b;
+    border-radius: 3px;
+    
+}
+header nav ul .sub-menu-2 a:hover {
+    background-color: #5fa9be;
+    color: #2c2b2b;
+    font-size: 15px;
+    font-weight: bold;
+}
+header nav ul .sub-menu-2 a{
+    text-align: right;
+    display: block;
+    padding: 8px;
+    margin-right: 3px;
+    margin: 0 auto;
+}
+header nav ul li:hover .sub-menu-2{
+    display: block;
+}
+/*main style*/
+ section.section-1{
+    max-width: 1230px;
+    min-height: 600px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    box-shadow: 1px 1px 20px 0px #4f4f4f;
+   
+}
+/*side bar*/
+main section .side-bar{
+    position: fixed;
+    min-width: 120px;
+    height: 50px;
+    background-color: #5fa9be;
+    top: 127px;
+    right: -6px;
+    border-radius: 8px;
+    border: 1px solid #8199a1;
+}
+
+.side-bar ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    margin: 10px;
+   
+}
+.blocker{
+    display: none;
+}
+.side-bar ul li{
+    margin-bottom: 10px;  
+    max-height: 30px;
+    list-style: none;
+}
+.side-bar ul li:hover{
+    background-color: #5cadc3;
+}
+.side-bar ul:hover .blocker{
+    display: block;
+    color: #2c2b2b;
+}
+
+.side-bar ul:hover{
+    box-shadow: 0px 1px 7px 0px #363636;
+    background-color: #549fb4;
+}
+main section .ul-side::after{
+    content: '';
+    min-height: 390px;
+    top: 90px;
+    
+}
+
+
+/*footer*/
+
+/*footer{
+    width: 100%;
+   min-height: 50px;
+    background-color: var(--box-color);
+    box-shadow: 0px 10px 20px 0px #7f7f7f;
+    margin-top: 10px;
+}*/
+
+@media only screen and (max-width:576px){
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-3 {
+        width: 16.33;
+    }
+    .col-xs-4 {
+        width: 16.33;
+    }
+    .col-xs-5 {
+        width: 16.33;
+    }
+    .col-xs-6 {
+        width: 16.33;
+    }
+    .col-xs-7 {
+        width: 16.33;
+    }
+    .col-xs-8 {
+        width: 16.33;
+    }
+    .col-xs-9 {
+        width: 16.33;
+    }
+    .col-xs-10 {
+        width: 16.33;
+    }
+    .col-xs-11 {
+        width: 16.33;
+    }
+    .col-xs-12 {
+        width: 16.33;
+    }
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 25px;
+}
+.footer p{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(68, 68, 68);
+    margin: 0 auto;
+}
